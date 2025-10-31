@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre — Unidos Pelo Bem</title>
+  <meta name="description" content="Conheça a história e a missão da ONG Unidos Pelo Bem.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <img src="assets/img/LogoOngFaculdade.svg" alt="Logotipo da ONG Unidos Pelo Bem" width="60" height="60">
+        <strong>ONG Unidos Pelo Bem</strong>
+      </a>
+      <nav aria-label="principal">
+        <ul class="nav">
+          <li><a href="#/home" data-link>Início</a></li>
+          <li><a href="#/sobre" data-link>Sobre</a></li>
+          <li><a href="#/projetos" data-link>Projetos</a></li>
+          <li><a href="#/doacao" data-link>Doações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section class="doacoes">
+  <h1>Faça sua Doação</h1>
+  <p>Sua contribuição ajuda a <strong>Unidos Pelo Bem</strong> a continuar transformando vidas por meio de projetos sociais, educação e solidariedade.</p>
+
+  <form class="form-doacao" action="#" method="post">
+    <fieldset>
+      <legend>Informações do Doador</legend>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="valor">Valor da doação (R$):</label>
+      <input type="number" id="valor" name="valor" step="0.01" min="1" required>
+
+      <label for="tipo">Tipo de doação:</label>
+      <select id="tipo" name="tipo">
+        <option value="unica">Doação única</option>
+        <option value="mensal">Doação mensal</option>
+      </select>
+
+      <label for="mensagem">Mensagem (opcional):</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe uma mensagem de apoio..."></textarea>
+
+      <button type="submit">Enviar Doação</button>
+    </fieldset>
+  </form>
+
+  <p class="pix">💚 Ou, se preferir, doe via <strong>PIX:</strong><br>
+  <strong>chavepix@unidospelobem.org</strong></p>
+</section>
+
+<!-- Seção de Voluntariado -->
+<section class="voluntariado">
+  <h2>Voluntariado</h2>
+  <p>Ser voluntário é uma das formas mais bonitas de fazer o bem.  
+  A <strong>Unidos Pelo Bem</strong> acredita que a solidariedade se multiplica quando cada pessoa compartilha seu tempo, talento e coração.</p>
+
+  <ul>
+    <li>💚 Descubra oportunidades de voluntariado em diferentes áreas.</li>
+    <li>👐 Candidate-se para participar dos projetos ativos da ONG.</li>
+    <li>📋 Acompanhe seu histórico de participação e impacto social.</li>
+    <li>🌎 Compartilhe suas experiências e inspire outras pessoas a se engajarem.</li>
+  </ul>
+
+  <p>Quer fazer parte dessa rede de solidariedade?  
+  Envie um e-mail para <strong>voluntarios@unidospelobem.org</strong> e venha transformar vidas com a gente!</p>
+</section>

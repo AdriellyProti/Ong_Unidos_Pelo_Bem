@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Unidos Pelo Bem — SPA</title>
+  <meta name="description" content="Projeto acadêmico: site acessível e responsivo de ONG com imagens otimizadas.">
+  <link rel="preload" as="image"
+        href="assets/img/hero-800.avif"
+        imagesrcset="assets/img/hero-800.avif 800w, assets/img/hero-1600.avif 1600w"
+        imagesizes="(max-width: 900px) 100vw, 900px">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="#/home" aria-label="Página inicial">
+        <img src="assets/img/LogoOngFaculdade.svg" alt="Logotipo da ONG" width="60" height="60">
+        <strong>ONG Unidos Pelo Bem</strong>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+       ☰
+      </button>
+
+      <nav aria-label="principal">
+        <ul class="nav">
+          <li><a href="#/home" data-link>Início</a></li>
+          <li><a href="#/sobre" data-link>Sobre</a></li>
+          <li><a href="#/projetos" data-link>Projetos</a></li>
+          <li><a href="#/doacao" data-link>Doações</a></li>
+          <li><a href="#/contato" data-link>Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Aqui o router injeta o conteúdo das páginas -->
+  <main id="app" class="container" aria-live="polite"></main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> ONG Unidos Pelo Bem — Projeto acadêmico</small>
+  </footer>
+
+  <!-- Somente o app.js como módulo; ele importa router e validators -->
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
+
